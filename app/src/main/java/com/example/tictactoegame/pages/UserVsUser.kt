@@ -14,6 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -36,7 +37,7 @@ fun UserVsUser(){
 
             Text(
                 text = "Player 1",
-                color = Color.White,
+                color = Color.Black,
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Medium
             )
@@ -45,7 +46,7 @@ fun UserVsUser(){
 
             Text(
                 text = "Player 2",
-                color = Color.White,
+                color = Color.Black,
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Medium
             )
@@ -53,4 +54,10 @@ fun UserVsUser(){
             Spacer(modifier = Modifier.height(16.dp))
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewUserVsUser() {
+    UserVsUser()
 }

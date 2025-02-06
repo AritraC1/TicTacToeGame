@@ -42,7 +42,7 @@ import com.example.tictactoegame.R
 import com.example.tictactoegame.components.ButtonWithIcon
 
 @Composable
-fun HomePage() {
+fun HomePage(navigationToScreen:() -> Unit) { // it will just run some code, no input and no output
 
     // State to control the dialog visibility
     var isDialogOpen by remember {
@@ -96,7 +96,8 @@ fun HomePage() {
                 text = "User vs User",
                 icon = painterResource(id = R.drawable.ic_user_vs_user),
                 onClick = {
-                    Toast.makeText(context, "Button clicked", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Player vs Player Selected", Toast.LENGTH_SHORT).show()
+                    navigationToScreen()
                 }
             )
         }
