@@ -7,7 +7,7 @@ This is a simple Tic Tac Toe game built using Kotlin and Jetpack Compose for And
 ## Features
 - 3x3 grid layout for the Tic Tac Toe board
 - Two modes: Player vs Player & Computer vs User
-- Game status display (turn information and winner)
+- Game status display (winner)
 - Game reset functionality
 - Simple AI for the "Computer vs User" mode (random move)
 
