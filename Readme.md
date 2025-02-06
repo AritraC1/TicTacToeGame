@@ -19,7 +19,7 @@ Kotlin, Jetpack-Compose
 ## Getting Started
 - To get started with this project, clone this repository and open it in Android Studio.
 ```
-  git clone 
+  git clone https://github.com/AritraC1/TicTacToeGame.git
 ```
 
 - Build and run the app on your android device.
