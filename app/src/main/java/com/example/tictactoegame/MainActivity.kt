@@ -10,6 +10,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.tictactoegame.ui.theme.TicTacToeGameTheme
 import com.example.tictactoegame.pages.HomePage
+import com.example.tictactoegame.pages.UserVsComputer
 import com.example.tictactoegame.pages.UserVsUser
 
 class MainActivity : ComponentActivity() {
@@ -25,17 +26,24 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun MyApp(){
+fun MyApp() {
     val navController = rememberNavController()
 
-    NavHost(navController = navController, startDestination = "HomePage") {
-         composable("homepage") {
-             HomePage {
-                 navController.navigate("uservsuserpage")
-             }
-         }
-         composable(route = "uservsuserpage"){
-             UserVsUser()
-         }
+    NavHost(navController = navController, startDestination = "homepage") {
+        composable("homepage") {
+            HomePage { gameMode ->
+                navController.navigate(gameMode)  // Navigate to selected page
+            }
+        }
+
+        // Navigation to Player vs computer page
+        composable(route = "uservsaipage") {
+            UserVsComputer()
+        }
+
+        // Navigation to Player vs player page
+        composable(route = "uservsuserpage") {
+            UserVsUser()
+        }
     }
 }

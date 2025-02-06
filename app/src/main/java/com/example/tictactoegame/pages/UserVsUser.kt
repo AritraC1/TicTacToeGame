@@ -55,9 +55,3 @@ fun UserVsUser(){
         }
     }
 }
-
-@Preview(showBackground = true)
-@Composable
-fun PreviewUserVsUser() {
-    UserVsUser()
-}
