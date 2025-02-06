@@ -1,4 +1,4 @@
-package components
+package com.example.tictactoegame.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
