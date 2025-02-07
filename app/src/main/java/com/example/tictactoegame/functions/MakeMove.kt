@@ -9,10 +9,14 @@ fun makeMove(state: TicTacToeState, row: Int, col: Int): TicTacToeState {
 
     val (winner, winningLine) = checkWinner(newBoard)
 
+    // Check for a draw (board is full and no winner)
+    val isDraw = newBoard.flatten().none { it == null } && winner == null
+    val newWinner = winner ?: if (isDraw) "Draw" else null
+
     return state.copy(
         board = newBoard,
         currentPlayer = if (winner == null) if (state.currentPlayer == "X") "O" else "X" else state.currentPlayer,
-        winner = winner,
+        winner = newWinner,
         winningLine = winningLine
     )
 }

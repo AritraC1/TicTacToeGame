@@ -21,6 +21,7 @@ import com.example.tictactoegame.functions.TicTacToeState
 import com.example.tictactoegame.functions.makeMove
 import com.example.tictactoegame.ui.theme.BgColor
 import com.example.tictactoegame.ui.theme.BtnColor
+import com.example.tictactoegame.ui.theme.TextColor
 import kotlinx.coroutines.delay
 
 @Composable
@@ -35,7 +36,7 @@ fun UserVsUser() {
 
     LaunchedEffect(gameState.winner) {
         if (gameState.winner != null) {
-            delay(2500)
+            delay(1500)
             showDialog = true
         }
     }
@@ -134,7 +135,7 @@ fun UserVsUser() {
                             Column {
                                 Text(
                                     text = if (it == "Draw") "It's a Draw!" else "Winner: $it",
-                                    color = if (it == "Draw") Color.Gray else Color.White,
+                                    color = if (it == "Draw") TextColor else TextColor,
                                     fontSize = 24.sp
                                 )
                             }
