@@ -17,7 +17,7 @@ This is a simple Tic Tac Toe game built using Kotlin and Jetpack Compose for And
 
 
 ### Player Vs Player
-https://github.com/AritraC1/TicTacToeGame/blob/master/app/src/main/java/com/example/tictactoegame/images/demo/playervsplayer.mp4
+[Player Vs Player](app/src/main/java/com/example/tictactoegame/images/demo/playervsplayer.mp4)
 
 ## Technologies Used
 Kotlin, Jetpack-Compose
