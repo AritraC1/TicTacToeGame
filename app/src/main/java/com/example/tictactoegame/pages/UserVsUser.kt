@@ -19,6 +19,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.tictactoegame.functions.TicTacToeState
 import com.example.tictactoegame.functions.makeMove
+import com.example.tictactoegame.ui.theme.BgColor
+import com.example.tictactoegame.ui.theme.BtnColor
 import kotlinx.coroutines.delay
 
 @Composable
@@ -41,7 +43,7 @@ fun UserVsUser() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF00b4d8))
+            .background(BgColor)
             .padding(12.dp),
     ) {
         Column(
@@ -70,8 +72,8 @@ fun UserVsUser() {
                                 Box(
                                     modifier = Modifier
                                         .size(100.dp)
-                                        .background(Color(0xFFE63946))
-                                        .border(5.dp, Color(0xFF00b4d8))
+                                        .background(BtnColor)
+                                        .border(5.dp, BgColor)
                                         .clickable {
                                             gameState = makeMove(gameState, rowIndex, colIndex)
                                         },
@@ -120,7 +122,7 @@ fun UserVsUser() {
             if (showDialog) {
                 gameState.winner?.let {
                     AlertDialog(
-                        containerColor = Color(0xFFeb606a),
+                        containerColor = BtnColor,
                         textContentColor = Color.White,
                         onDismissRequest = {
                             gameState = TicTacToeState()
@@ -144,7 +146,7 @@ fun UserVsUser() {
                                     showDialog = false },
                                 colors = ButtonDefaults.buttonColors(containerColor = Color.White)
                             ) {
-                                Text("Restart Game", color = Color(0xFF00b4d8))
+                                Text("Restart Game", color = BgColor)
                             }
                         }
                     )

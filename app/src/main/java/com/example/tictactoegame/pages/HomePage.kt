@@ -40,6 +40,9 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import com.example.tictactoegame.R
 import com.example.tictactoegame.components.ButtonWithIcon
+import com.example.tictactoegame.ui.theme.BgColor
+import com.example.tictactoegame.ui.theme.BtnColor
+import com.example.tictactoegame.ui.theme.TextColor
 
 @Composable
 fun HomePage(onGameSelected: (String) -> Unit) {
@@ -54,7 +57,7 @@ fun HomePage(onGameSelected: (String) -> Unit) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF00b4d8))
+            .background(BgColor)
             .padding(
                 bottom = WindowInsets.navigationBars
                     .asPaddingValues()
@@ -73,7 +76,7 @@ fun HomePage(onGameSelected: (String) -> Unit) {
             // Header
             Text(
                 "Tic-Tac-Toe",
-                color = Color(0xFFFFFFFF),
+                color = TextColor,
                 fontSize = 50.sp,
                 fontWeight = FontWeight.Bold
             )
@@ -113,7 +116,7 @@ fun HomePage(onGameSelected: (String) -> Unit) {
                 .padding(6.dp)// Adds space between button and edges
                 .align(Alignment.BottomEnd), // Positions button in the bottom-right corner
             shape = CircleShape, // Optional: Makes the button circular
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFe63946)) // Optional color customization
+            colors = ButtonDefaults.buttonColors(containerColor = BtnColor) // Optional color customization
         ) {
             Text(
                 "?",
@@ -131,7 +134,7 @@ fun HomePage(onGameSelected: (String) -> Unit) {
                         .fillMaxSize()
                         .wrapContentSize(Alignment.Center)
                         .padding(2.dp)
-                        .background(Color(0xFFeb606a), shape = RoundedCornerShape(12.dp))
+                        .background(BtnColor, shape = RoundedCornerShape(12.dp))
                 ) {
                     IconButton(
                         onClick = { isDialogOpen = false },
@@ -154,14 +157,14 @@ fun HomePage(onGameSelected: (String) -> Unit) {
                         Spacer(modifier = Modifier.height(27.dp))
                         Text(
                             text = "Rules",
-                            color = Color(0xFFFFFFFF),
+                            color = TextColor,
                             fontSize = 22.sp,
                             fontWeight = FontWeight.Bold
                         )
                         Spacer(modifier = Modifier.height(16.dp))
                         Text(
                             text = "1. The goal is to place three marks (X or O) in a row, column, or diagonal to win a game",
-                            color = Color(0xFFFFFFFF),
+                            color = TextColor,
                             fontSize = 16.sp,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Justify
@@ -169,7 +172,7 @@ fun HomePage(onGameSelected: (String) -> Unit) {
                         Spacer(modifier = Modifier.height(16.dp))
                         Text(
                             text = "2. Winning: A player wins if they have three marks in a row, column, or diagonal.",
-                            color = Color(0xFFFFFFFF),
+                            color = TextColor,
                             fontSize = 16.sp,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Justify
@@ -177,7 +180,7 @@ fun HomePage(onGameSelected: (String) -> Unit) {
                         Spacer(modifier = Modifier.height(16.dp))
                         Text(
                             text = "3. Tie: If all cells are filled and no player has won, it's a tie.",
-                            color = Color(0xFFFFFFFF),
+                            color = TextColor,
                             fontSize = 16.sp,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Justify
