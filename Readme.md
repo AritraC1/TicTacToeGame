@@ -17,9 +17,10 @@ This is a simple Tic Tac Toe game built using Kotlin and Jetpack Compose for And
 
 
 ### Player Vs Player
-<iframe width="560" height="315" src="app/src/main/java/com/example/tictactoegame/images/demo/playervsplayer.mp4" frameborder="0" allowfullscreen>
-</iframe>
-
+<video width="320" height="240" controls>
+  <source src="/Users/aritrachatterjee/Desktop/TicTacToe/app/src/main/java/com/example/tictactoegame/images/demo/playervsplayer.mp4" type="video/mp4">
+  Demo Video 2
+</video>
 
 ## Technologies Used
 Kotlin, Jetpack-Compose
