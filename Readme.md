@@ -13,6 +13,11 @@ This is a simple Tic Tac Toe game built using Kotlin and Jetpack Compose for And
 
 ## Demo
 
+### Player Vs Computer
+
+
+### Player Vs Player
+
 ## Technologies Used
 Kotlin, Jetpack-Compose
 

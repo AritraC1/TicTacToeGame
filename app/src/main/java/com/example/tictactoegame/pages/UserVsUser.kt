@@ -54,8 +54,6 @@ fun UserVsUser() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Spacer(modifier = Modifier.height(32.dp))
-
             // Heading
             Text(
                 "Player vs Player",
