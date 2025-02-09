@@ -13,7 +13,7 @@ This is a simple Tic Tac Toe game built using Kotlin and Jetpack Compose for And
 
 ## Demo
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+<div style="display: flex; flex-wrap: wrap; gap: 50px;">
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img1.png" width="300" height="600" />
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img2.png" width="300" height="600" />
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img3.png" width="300" height="600" />
