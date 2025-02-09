@@ -18,7 +18,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.tictactoegame.functions.TicTacToeState
-import com.example.tictactoegame.functions.makeMove
+import com.example.tictactoegame.functions.uservsuser.makeMove
 import com.example.tictactoegame.ui.theme.BgColor
 import com.example.tictactoegame.ui.theme.BtnColor
 import com.example.tictactoegame.ui.theme.TextColor
@@ -26,9 +26,11 @@ import kotlinx.coroutines.delay
 
 @Composable
 fun UserVsUser() {
+    // State Management with remember and mutableStateOf
     var gameState by remember { mutableStateOf(TicTacToeState()) }
     var showDialog by remember { mutableStateOf(false) }
 
+    // Animation
     val animatedProgress by animateFloatAsState(
         targetValue = if (gameState.winner != null) 1f else 0f,
         animationSpec = tween(durationMillis = 500), label = "" // Speed of animation
