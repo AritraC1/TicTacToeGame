@@ -13,6 +13,7 @@ This is a Tic Tac Toe game built using Kotlin and Jetpack Compose for Android. I
 
 ## Demo
 
+### Screenshots
 <div style="display: flex; flex-wrap: wrap; gap: 50px;">
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img1.png" width="300" height="600" />
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img2.png" width="300" height="600" />
@@ -21,6 +22,9 @@ This is a Tic Tac Toe game built using Kotlin and Jetpack Compose for Android. I
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img4.png" width="300" height="600" />
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img5.png" width="300" height="600" />
 </div>
+
+### Video
+[Demo Here](https://drive.google.com/drive/folders/1dPfnpYTZqDYsHVvXmAxQKrCbNSEl0GgH?usp=sharing)
 
 ## Technologies & Concepts Used
 1. **Kotlin** is used for game logic, player turns, and state management.
