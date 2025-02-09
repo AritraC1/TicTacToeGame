@@ -17,9 +17,9 @@ This is a simple Tic Tac Toe game built using Kotlin and Jetpack Compose for And
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img1.png" width="200" height="200" />
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img2.png" width="200" height="200" />
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img3.png" width="200" height="200" />
+  <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img6.png" width="200" height="200" />
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img4.png" width="200" height="200" />
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img5.png" width="200" height="200" />
-  <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img6.png" width="200" height="200" />
 </div>
 
 ## Technologies Used
