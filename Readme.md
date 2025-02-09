@@ -1,6 +1,6 @@
 # Tic-Tac-Toe Game
 
-This is a simple Tic Tac Toe game built using Kotlin and Jetpack Compose for Android. It supports two game modes:
+This is a Tic Tac Toe game built using Kotlin and Jetpack Compose for Android. It supports two game modes:
 - **Computer vs User** (single-player mode against AI)
 - **Player 1 vs Player 2** (local multiplayer)
 
@@ -22,8 +22,12 @@ This is a simple Tic Tac Toe game built using Kotlin and Jetpack Compose for And
   <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img5.png" width="300" height="600" />
 </div>
 
-## Technologies Used
-Kotlin, Jetpack-Compose
+## Technologies & Concepts Used
+1. **Kotlin** is used for game logic, player turns, and state management.
+2. **Jetpack Compose** enables declarative UI and automatic UI updates based on game state. 
+3. **Game Logic** handles board state, turn management, and winner detection. 
+4. **Two Game Modes**: AI plays against the user in single-player, or two players compete in multiplayer. 
+5. **AI (in single-player)** utilizes algorithms like **Minimax Algorithm** for decision-making based on board evaluation.
 
 ## Getting Started
 - To get started with this project, clone this repository and open it in Android Studio.
