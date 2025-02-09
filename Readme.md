@@ -13,13 +13,14 @@ This is a Tic Tac Toe game built using Kotlin and Jetpack Compose for Android. I
 
 ## Demo
 
-![Img1](app/src/main/java/com/example/tictactoegame/images/demo/Img1.png){: width="300" height="600"}
-![Img2](app/src/main/java/com/example/tictactoegame/images/demo/Img2.png){: width="300" height="600"}
-![Img3](app/src/main/java/com/example/tictactoegame/images/demo/Img3.png){: width="300" height="600"}
-![Img6](app/src/main/java/com/example/tictactoegame/images/demo/Img6.png){: width="300" height="600"}
-![Img4](app/src/main/java/com/example/tictactoegame/images/demo/Img4.png){: width="300" height="600"}
-![Img5](app/src/main/java/com/example/tictactoegame/images/demo/Img5.png){: width="300" height="600"}
-
+<div style="display: flex; flex-wrap: wrap; gap: 50px;">
+  <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img1.png" width="300" height="600" />
+  <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img2.png" width="300" height="600" />
+  <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img3.png" width="300" height="600" />
+  <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img6.png" width="300" height="600" />
+  <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img4.png" width="300" height="600" />
+  <img src="app/src/main/java/com/example/tictactoegame/images/demo/Img5.png" width="300" height="600" />
+</div>
 
 ## Technologies & Concepts Used
 1. **Kotlin** is used for game logic, player turns, and state management.
